@@ -1,0 +1,18 @@
+<form method="POST" action="/cats/{{cat.id}}/edit">
+  <div>
+    <input type="text" name="name" placeholder="Cat name"
+    value="{{cat.name}}"/>
+  </div>
+
+  <div>
+    <input type="number" name="age" placeholder="Cat age"
+    value="{{cat.age}}"
+    />
+  </div>
+
+  <div>
+    <input type="text" name="owner" placeholder="Cat Owner" value="{{cat.owner}}" />
+  </div>
+
+  <button type="submit">Edit Gato</button>
+</form>

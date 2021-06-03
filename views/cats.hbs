@@ -1,0 +1,15 @@
+<h1>All Cats</h1>
+
+<ul>
+  {{#each cats as |cat|}}
+    <li>
+      {{cat.name}}, {{cat.age}}, {{cat.owner}}
+      <form method="POST" action="/cats/{{cat.id}}/delete">
+        <button type="submit">Delete</button>
+      </form>
+      <a href="/cats/{{cat.id}}/edit">Edit</a>
+    </li>
+  {{/each}}
+</ul>
+
+<a href="/cats/new">Nuevo Gato</a>
